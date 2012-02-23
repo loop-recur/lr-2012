@@ -1,0 +1,1473 @@
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+audio[controls], canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+html {
+  font-size: 100%;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.231;
+}
+body,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+  color: #222;
+}
+::-moz-selection {
+  background: #fe57a1;
+  color: #fff;
+  text-shadow: none;
+}
+::selection {
+  background: #fe57a1;
+  color: #fff;
+  text-shadow: none;
+}
+a {
+  color: #00e;
+}
+a:visited {
+  color: #551a8b;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:hover, a:active {
+  outline: 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b, strong {
+  font-weight: bold;
+}
+blockquote {
+  margin: 1em 40px;
+}
+dfn {
+  font-style: italic;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+ins {
+  background: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+/* Redeclare monospace font family: en.wikipedia.org/wiki/User:Davidgothberg/Test59 */
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+/* Improve readability of pre-formatted text in all browsers */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+q {
+  quotes: none;
+}
+q:before, q:after {
+  content: "";
+  content: none;
+}
+small {
+  font-size: 85%;
+}
+/* Position subscript and superscript content without affecting line-height: gist.github.com/413930 */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+dd {
+  margin: 0 0 0 0;
+}
+nav ul, nav ol {
+  list-style: none;
+}
+/* Improve image quality when scaled in IE7 */
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+/* Correct overflow displayed oddly in IE9 */
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 0;
+}
+form {
+  margin: 0;
+}
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+/* 	IE correction */
+legend {
+  border: 0;
+  *margin-left: -7px;
+  padding: 0;
+}
+label {
+  cursor: pointer;
+}
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+button, input {
+  line-height: normal;
+  *overflow: visible;
+}
+/* Display hand cursor for clickable form elements, allow styling of clickable form elements in iOS */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+/* Consistent box sizing and appearance */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+}
+input[type="search"] {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+/* Remove inner padding and border in FF3/4 */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+/* Remove default vertical scrollbar in IE6/7/8/9 */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+/* Colors for form validity */
+input:invalid, textarea:invalid {
+  background-color: #f0dddd;
+}
+/* ==!!!!!!!!!!!!!!!
+   Primary styles
+   Author: loop/recur
+   ====!!!!!!!!!!!!!! */
+/*!
+@font-face
+==!*/
+@font-face {
+  font-family: 'CosmeticaOblique';
+  src: url('../fonts/mgopencosmeticaoblique-webfont.eot');
+  src: url('../fonts/mgopencosmeticaoblique-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/mgopencosmeticaoblique-webfont.woff') format('woff'), url('../fonts/mgopencosmeticaoblique-webfont.ttf') format('truetype'), url('../fonts/mgopencosmeticaoblique-webfont.svg#../fonts/mgopenCosmeticaOblique') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'CosmeticaRegular';
+  src: url('../fonts/mgopencosmeticaregular-webfont.eot');
+  src: url('../fonts/mgopencosmeticaregular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/mgopencosmeticaregular-webfont.woff') format('woff'), url('../fonts/mgopencosmeticaregular-webfont.ttf') format('truetype'), url('../fonts/mgopencosmeticaregular-webfont.svg#../fonts/mgopenCosmeticaRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/*!
+less.js mixins
+==!*/
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+  content: ".";
+}
+/* !======GENERAL STYLES======= */
+body {
+  font: 14px Optima, 'CosmeticaRegular', Georgia, serif;
+  overflow: hidden;
+}
+p,
+h3,
+header,
+.intro_text,
+.item_name {
+  font-size: 0.825em;
+}
+/* !======LANDING STYLES======= */
+header {
+  /* end .landing_top */
+
+  /* end .landing_bottom */
+
+  /* end intro_text */
+
+}
+header .landing_top {
+  background: url(../img/bgs/landing_bg1.png) repeat-x;
+  background-color: #f9ca4f;
+  background-position: bottom;
+  width: 100%;
+  height: 140px;
+}
+header .landing_top .logo {
+  background: url(../img/logo@2x.png) no-repeat;
+  background-size: 100%;
+  width: 480px;
+  height: 380px;
+  margin: 0 0 0 -25%;
+}
+header .landing_bottom {
+  background: url(../img/bgs/landing_bg2.png) repeat-x, url(../img/bgs/landing_bg3.png) repeat;
+  background-color: #faf6f6;
+  width: 100%;
+  height: auto;
+}
+header .landing_bottom .landing_illustration_wrap {
+  float: left;
+  width: 100%;
+  transition-duration: 0.35s;
+  -webkit-transition-duration: 0.35s;
+  -moz-transition-duration: 0.35s;
+}
+header .landing_bottom .landing_illustration {
+  width: 260px;
+  margin: -33px auto 0 auto;
+  transition-duration: 0.35s;
+  -webkit-transition-duration: 0.35s;
+  -moz-transition-duration: 0.35s;
+}
+header .intro_text {
+  float: left;
+}
+header .intro_text img {
+  width: 90%;
+  margin: 30px 5% 0 5%;
+}
+header .intro_text p {
+  font-size: 1em;
+  width: 80%;
+  padding: 0 8%;
+}
+header .landing_bottom:after {
+  content: "";
+  background: url(../img/bgs/border1.png) repeat-x;
+  background-color: #eb5e29;
+  width: 100%;
+  height: 9px;
+  display: block;
+  clear: both;
+}
+/* end header */
+.fig {
+  margin: -10px 0 0 10px;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: .7em;
+  color: #999999;
+}
+/* !======ABOUT STYLES======= */
+.about {
+  background: url(../img/bgs/about_bg.png) repeat;
+  background-color: #1e2026;
+  float: left;
+  width: 100%;
+  color: #fefefe;
+  -moz-text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  -webkit-text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+.about .about_heading {
+  background: url(../img/about_heading.png) no-repeat;
+  background-size: 100%;
+  width: 80%;
+  max-height: 50px;
+  max-width: 454px;
+  margin: 20px auto 0 auto;
+  zoom: 1;
+  transition-duration: 0.35s;
+  -webkit-transition-duration: 0.35s;
+  -moz-transition-duration: 0.35s;
+}
+.about .about_heading:after {
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+  content: ".";
+}
+.about .about_illustration_wrap {
+  width: 50%;
+  height: auto;
+  float: right;
+  margin: 20px 0 80px 5%;
+}
+.about .about_illustration {
+  width: 100%;
+  max-height: 420px;
+}
+.about p {
+  padding: 0 5%;
+  margin-bottom: 1.825em;
+}
+.about h3 {
+  padding: 0 5%;
+  color: #E5E5E5;
+}
+/* end .about */
+.about:after {
+  content: "";
+  background: url(../img/bgs/border2.png) repeat-x;
+  background-color: #eb5e29;
+  width: 100%;
+  height: 10px;
+  display: block;
+  float: left;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+/* !======WORK STYLES======= */
+.work {
+  background: url(../img/bgs/work_bg.png) repeat;
+  background-color: #9bc6d3;
+  width: 100%;
+  height: auto;
+  zoom: 1;
+  /* end .featured */
+
+  /* end .work_list */
+
+}
+.work:after {
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+  content: ".";
+}
+.work .work_heading {
+  background: url(../img/work_heading.png) no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+  width: 80%;
+  margin: 20px auto 0 auto;
+  padding: 20px 0 0 0;
+  min-height: 60px;
+}
+.work .featured li {
+  width: 100%;
+  float: left;
+}
+.work .featured li img {
+  width: 100%;
+  margin: 0 0 -50px 0;
+}
+.work .featured li .item_name {
+  font-size: 1em;
+}
+.work .work_list {
+  width: 100%;
+}
+.work .work_list li {
+  width: 50%;
+  float: left;
+  margin: 0 0 30px 0;
+}
+.work .work_list li img {
+  width: 90%;
+  margin: 0 5%;
+}
+.work .work_list .omit {
+  -webkit-transition: opacity 5s ease-in-out;
+  opacity: 0;
+  position: absolute;
+  left: -99999px;
+  overflow: hidden;
+}
+/* end .work */
+.item_name {
+  font-family: 'Helvetica Neue', Arial, Helvetica, serif;
+  color: #555555;
+  -moz-text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
+  -webkit-text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
+  font-weight: 200;
+  text-align: center;
+  line-height: 1.1em;
+}
+.item_name strong {
+  font-weight: 600;
+}
+/* !======TEAM STYLES======= */
+.team:before {
+  content: "";
+  background: url(../img/bgs/border2.png) repeat-x;
+  background-color: #eb5e29;
+  width: 100%;
+  height: 10px;
+  display: block;
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.3);
+}
+.team {
+  background: url(../img/bgs/team_bg.png) repeat;
+  background-color: #fbfbfb;
+  width: 100%;
+  height: auto;
+  float: left;
+  zoom: 1;
+  /* end .team_members li */
+
+}
+.team:after {
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+  content: ".";
+}
+.team h1 {
+  background: url(../img/team_heading.png) no-repeat;
+  width: 240px;
+  height: 114px;
+  margin: 0 auto;
+}
+.team .team_members {
+  width: 80%;
+  margin: 0 auto;
+  /* end header */
+
+}
+.team .team_members img {
+  float: left;
+  margin: 0 10px 0 0;
+}
+.team .team_members img:hover {
+  opacity: 0.7;
+  transition-duration: 0.35s;
+  -webkit-transition-duration: 0.35s;
+  -moz-transition-duration: 0.35s;
+}
+.team .team_members p {
+  float: left;
+  margin-bottom: 30px;
+}
+.team .team_members header {
+  min-width: 200px;
+  float: left;
+  font-family: 'Helvetica Neue', Arial, Helvetica, serif;
+  color: #555555;
+  -moz-text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
+  -webkit-text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
+  font-weight: 200;
+}
+.team .team_members header a {
+  text-decoration: none;
+  color: #555555;
+}
+.team .team_members header a:hover {
+  color: #888888;
+  transition-duration: 0.35s;
+  -webkit-transition-duration: 0.35s;
+  -moz-transition-duration: 0.35s;
+}
+/* end .team */
+/* !======CONTACT STYLES======= */
+.contact {
+  background: url(../img/bgs/contact_bg.png) repeat-y;
+  background-color: #9bc6d3;
+  background-size: 100%;
+  width: 100%;
+  min-height: 400px;
+  padding: 40px 0 0 0;
+  box-shadow: inset 0 5px 35px #888888;
+  -moz-box-shadow: inset 0 5px 35px #888888;
+  -webkit-box-shadow: inset 0 5px 35px #888888;
+  float: left;
+  /* end form */
+
+}
+.contact .contact_heading {
+  background: url(../img/contact_heading.png) no-repeat;
+  background-size: 100%;
+  width: 80%;
+  margin: 0 10% 0 10%;
+  min-height: 60px;
+  display: block;
+  float: left;
+}
+.contact .iPhone {
+  background: url(../img/contact_iPhone.png) no-repeat;
+  background-size: 100%;
+  display: block;
+  width: 200px;
+  height: 360px;
+  margin: 0 20%;
+  float: left;
+  position: relative;
+  /* end .iPhone */
+
+}
+.contact .iPhone .time {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: .4em;
+  font-weight: 800;
+  line-height: 1;
+  color: #555555;
+  border: none;
+  position: absolute;
+  top: 69px;
+  left: 89px;
+  -moz-text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
+  -webkit-text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
+}
+.contact .iPhone form {
+  position: absolute;
+  top: 80px;
+  left: 34px;
+  width: 100%;
+}
+.contact .iPhone form input, .contact .iPhone form textarea {
+  width: 60%;
+  height: 5%;
+  background: #ffffff;
+  border: 1px solid #888888;
+  padding: 5px;
+  font-size: 0.7em;
+  color: #444444;
+  display: block;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+.contact .iPhone form label {
+  display: block;
+  margin: 5px 0 1px 0;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: .7em;
+  font-weight: bold;
+  line-height: 1;
+  color: #333333;
+  border: none;
+  -moz-text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
+  -webkit-text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
+}
+.contact .iPhone form input:focus, .contact .iPhone form textarea:focus {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  transition-duration: 0.35s;
+  -webkit-transition-duration: 0.35s;
+  -moz-transition-duration: 0.35s;
+}
+.contact .iPhone form .message {
+  min-height: 60px;
+}
+.contact .iPhone form .submit {
+  margin: 5% 2%;
+  padding: 8px 15px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  line-height: 1;
+  color: #444444;
+  border: none;
+  -moz-text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
+  -webkit-text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, 0.7)), to(#bbbbbb));
+  background-image: -moz-linear-gradient(0% 100%, 90deg, #bbbbbb, rgba(255, 255, 255, 0.7));
+  background-color: #fff;
+  -webkit-border-radius: 23px;
+  -moz-border-radius: 23px;
+  -o-border-radius: 23px;
+  border-radius: 23px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  transition-duration: 0.35s;
+  -webkit-transition-duration: 0.35s;
+  -moz-transition-duration: 0.35s;
+}
+.contact .iPhone form .submit:hover {
+  background-color: #444444;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  transition-duration: 0.35s;
+  -webkit-transition-duration: 0.35s;
+  -moz-transition-duration: 0.35s;
+}
+.contact .iPhone form .submit:active {
+  background-color: #000000;
+}
+.contact .contact_content {
+  float: left;
+  width: 80%;
+  margin: 0 10% 0 10%;
+  -moz-text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
+  -webkit-text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
+}
+.contact .contact_content img {
+  width: 30px;
+}
+.contact .contact_content a:hover {
+  opacity: 0.8;
+  transition-duration: 0.35s;
+  -webkit-transition-duration: 0.35s;
+  -moz-transition-duration: 0.35s;
+}
+/* end .contact */
+/*
+.success {
+	position: absolute;
+	top: 76px;
+	left: 27px;
+	height: 220px;
+	width: 146px;
+	.box-shadow(inset, 0, 0, 35px, #444444);
+	background: url(../img/bgs/team_bg.png) repeat;
+	background-color: #fbfbfb;
+	z-index: 99;
+	
+	p {
+	font-family: @sans-serif;
+	font-weight: bold;
+	color: #666666;
+	width: 70%;
+	text-align: center;
+	margin: 30px 15% 0 15%;
+	}
+}
+*/
+/* For image replacement */
+.ir {
+  display: block;
+  text-indent: -999em;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+}
+.ir br {
+  display: none;
+}
+.hide {
+  display: none;
+}
+/* !======START MEDIA QUERIES======= */
+@media only screen and (min-width: 320px) {
+  /* !======320 LANDING STYLES======= */
+  body:before {
+    content: "320px";
+    background: teal;
+    position: fixed;
+    padding: 10px;
+    top: 0;
+    right: 0;
+    transition-duration: 0.35s;
+    -webkit-transition-duration: 0.35s;
+    -moz-transition-duration: 0.35s;
+  }
+  header {
+    /* end .landing_top */
+  
+    /* end .landing_bottom */
+  
+    /* end intro_text */
+  
+  }
+  header .landing_bottom .landing_illustration_wrap {
+    width: 62.5%;
+    transition-duration: 0.35s;
+    -webkit-transition-duration: 0.35s;
+    -moz-transition-duration: 0.35s;
+  }
+  header .landing_bottom .landing_illustration {
+    width: 200px;
+    margin: -25px 0 0 0;
+    transition-duration: 0.35s;
+    -webkit-transition-duration: 0.35s;
+    -moz-transition-duration: 0.35s;
+  }
+  header .intro_text {
+    margin: 110px 0 0 -20%;
+    width: 56.25%;
+    transition-duration: 0.35s;
+    -webkit-transition-duration: 0.35s;
+    -moz-transition-duration: 0.35s;
+  }
+  /* end header */
+  .fig {
+    margin: -10px 0 100px 10px;
+    transition-duration: 0.35s;
+    -webkit-transition-duration: 0.35s;
+    -moz-transition-duration: 0.35s;
+  }
+  /* !======320 ABOUT STYLES======= */
+  .about .about_illustration_wrap {
+    margin: 70px 3% -80px 5%;
+    transition-duration: 0.35s;
+    -webkit-transition-duration: 0.35s;
+    -moz-transition-duration: 0.35s;
+  }
+  /* end .about */
+  /* !======320 WORK STYLES======= */
+  .work {
+    /* end .featured */
+  
+    /* end .work_list */
+  
+  }
+  /* end .work */
+  /*!
+  team styles
+  ==!*/
+  .team {
+    /* end .team_members li */
+  
+  }
+  .team .team_members li {
+    /* end header */
+  
+  }
+  /* end .team */
+  /* !======320 CONTACT STYLES======= */
+  .contact {
+    /* end form */
+  
+  }
+  .contact .iPhone {
+    width: 260px;
+    height: 480px;
+    margin: 0 10%;
+    /* end .iPhone */
+  
+  }
+  .contact .iPhone .time {
+    font-size: .55em;
+    top: 88px;
+    left: 110px;
+  }
+  .contact .iPhone form {
+    position: absolute;
+    top: 100px;
+    left: 46px;
+    width: 100%;
+  }
+  .contact .iPhone form label {
+    margin: 16px 0 4px 0;
+  }
+  /* end .contact */
+  /*
+  .message {
+  min-height: 80px;
+  }
+  
+  .success{
+  	top: 99px;
+  	left: 35px;
+  	height: 284px;
+  	width: 191px;
+  }
+  */
+}
+/* ===! end min-width: 320px ====! */
+@media only screen and (min-width: 380px) {
+  /* !======380 LANDING STYLES======= */
+  body:before {
+    content: "380px";
+    background: red;
+    position: fixed;
+    padding: 10px;
+    top: 0;
+    right: 0;
+    transition-duration: 0.35s;
+    -webkit-transition-duration: 0.35s;
+    -moz-transition-duration: 0.35s;
+  }
+  header {
+    /* end .landing_top */
+  
+    /* end .landing_bottom */
+  
+    /* end intro_text */
+  
+  }
+  header .landing_bottom .landing_illustration_wrap {
+    padding: 0 0 0 10%;
+    transition-duration: 0.35s;
+    -webkit-transition-duration: 0.35s;
+    -moz-transition-duration: 0.35s;
+  }
+  header .intro_text {
+    margin: 110px 0 0 -30%;
+    font-size: 1em;
+    transition-duration: 0.35s;
+    -webkit-transition-duration: 0.35s;
+    -moz-transition-duration: 0.35s;
+  }
+  /* end header */
+  .fig {
+    margin: -10px 0 30px 10px;
+    transition-duration: 0.35s;
+    -webkit-transition-duration: 0.35s;
+    -moz-transition-duration: 0.35s;
+  }
+  /* !======380 ABOUT STYLES======= */
+  .about .about_heading {
+    min-height: 40px;
+  }
+  .about .about_illustration_wrap {
+    margin: 40px 3% 0 5%;
+    transition-duration: 0.35s;
+    -webkit-transition-duration: 0.35s;
+    -moz-transition-duration: 0.35s;
+  }
+  .about .about_illustration {
+    max-height: 380px;
+  }
+  /* end .about */
+  /* !======380 WORK STYLES======= */
+  .work {
+    /* end .featured */
+  
+    /* end .work_list */
+  
+  }
+  /* end .work */
+  /* !======380 TEAM STYLES======= */
+  .team {
+    /* end .team_members li */
+  
+  }
+  .team .team_members li {
+    /* end header */
+  
+  }
+  /* end .team */
+  /* !======380 CONTACT STYLES======= */
+  .contact {
+    /* end form */
+  
+  }
+  .contact .iPhone {
+    margin: 0 20%;
+    /* end .iPhone */
+  
+  }
+  .contact .contact_content {
+    margin: 0 10% 20px 30%;
+    width: 60%;
+  }
+  /* end .contact */
+}
+/* ===! end min-width: 380px ====! */
+@media only screen and (min-width: 480px) {
+  /* !======480 LANDING STYLES======= */
+  body:before {
+    content: "480px";
+    background: green;
+    position: fixed;
+    padding: 10px;
+    top: 0;
+    right: 0;
+    transition-duration: 0.35s;
+    -webkit-transition-duration: 0.35s;
+    -moz-transition-duration: 0.35s;
+  }
+  header {
+    /* end .landing_top */
+  
+    /* end .landing_bottom */
+  
+    /* end intro_text */
+  
+  }
+  header .landing_bottom .landing_illustration_wrap {
+    padding: 0 0 0 5%;
+    transition-duration: 1s;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+  }
+  header .intro_text {
+    margin: 0 0 0 -25%;
+    transition-duration: 1s;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+  }
+  /* end header */
+  /* !======480 ABOUT STYLES======= */
+  .about .about_illustration_wrap {
+    margin: 40px 3% 20px 5%;
+  }
+  /* end .about */
+  /* !======480 WORK STYLES======= */
+  .work {
+    /* end .featured */
+  
+    /* end .work_list */
+  
+  }
+  .work .work_heading {
+    width: 380px;
+    height: 70px;
+  }
+  .work .featured li img {
+    width: 80%;
+    margin: 0 10% -60px 10%;
+  }
+  .work .work_list li img {
+    width: 80%;
+    margin: 0 10% -6px 10%;
+  }
+  /* end .work */
+  /* !======480 TEAM STYLES======= */
+  .team {
+    /* end .team_members li */
+  
+  }
+  .team .team_members li {
+    /* end header */
+  
+  }
+  /* end .team */
+  /* !======480 CONTACT STYLES======= */
+  .contact {
+    /* end form */
+  
+  }
+  .contact .contact_heading {
+    background-position: center;
+    width: 60%;
+    margin: 0 20% 10px 20%;
+  }
+  .contact .iPhone {
+    width: 200px;
+    height: 360px;
+    margin: 0 0 0 10%;
+    float: left;
+    position: relative;
+    /* end .iPhone */
+  
+  }
+  .contact .iPhone .time {
+    font-size: .4em;
+    font-weight: 800;
+    top: 69px;
+    left: 89px;
+  }
+  .contact .iPhone form {
+    position: absolute;
+    top: 80px;
+    left: 34px;
+    width: 100%;
+  }
+  .contact .iPhone form input, .contact .iPhone form textarea {
+    padding: 5px;
+  }
+  .contact .iPhone form label {
+    margin: 5px 0 1px 0;
+    font-size: .7em;
+  }
+  .contact .iPhone form .message {
+    min-height: 60px;
+  }
+  .contact .contact_content {
+    float: left;
+    width: 42%;
+    margin: 60px 0 0 2%;
+  }
+  .contact .contact_content img {
+    width: 30px;
+  }
+  .contact .contact_content a:hover {
+    opacity: 0.8;
+    transition-duration: 0.35s;
+    -webkit-transition-duration: 0.35s;
+    -moz-transition-duration: 0.35s;
+  }
+  /* end .contact */
+  /*
+  .success {
+  	top: 76px;
+  	left: 27px;
+  	height: 220px;
+  	width: 146px;
+  }
+  */
+}
+/* ===! end min-width: 480px ====! */
+@media only screen and (min-width: 580px) {
+  /* !======580 LANDING STYLES======= */
+  body:before {
+    content: "580px";
+    background: pink;
+    position: fixed;
+    padding: 10px;
+    top: 0;
+    right: 0;
+    transition-duration: 0.35s;
+    -webkit-transition-duration: 0.35s;
+    -moz-transition-duration: 0.35s;
+  }
+  header {
+    /* end .landing_top */
+  
+    /* end .landing_bottom */
+  
+    /* end intro_text */
+  
+  }
+  header .landing_top .logo {
+    margin: 0 0 0 -10%;
+  }
+  header .landing_bottom .landing_illustration_wrap {
+    margin: 0 0 0 0;
+  }
+  header .landing_bottom .landing_illustration {
+    width: 260px;
+    margin: -33px 0 0 0;
+  }
+  header .intro_text {
+    float: left;
+    margin: 0 0 0 -25%;
+  }
+  header .intro_text img {
+    width: 90%;
+    margin: 80px 5% 0 5%;
+  }
+  header .intro_text p {
+    font-size: 1em;
+    width: 80%;
+    padding: 0 8%;
+  }
+  /* end header */
+  /* !======580 ABOUT STYLES======= */
+  .about .about_heading {
+    float: none;
+    width: 60%;
+    margin: 40px 0 0 3%;
+    transition-duration: 0.35s;
+    -webkit-transition-duration: 0.35s;
+    -moz-transition-duration: 0.35s;
+  }
+  .about .about_illustration_wrap {
+    margin: 0 3%;
+    max-width: 40%;
+    transition-duration: 0.35s;
+    -webkit-transition-duration: 0.35s;
+    -moz-transition-duration: 0.35s;
+  }
+  /* end .about */
+  /* !======580 WORK STYLES======= */
+  .work {
+    /* end .featured */
+  
+    /* end .work_list */
+  
+  }
+  .work .work_heading {
+    background-position-x: right;
+    background-size: 50%;
+    width: 95%;
+    max-height: 50px;
+    margin: 20px 10% 0 0;
+  }
+  .work .featured li {
+    width: 45%;
+  }
+  .work .featured li img {
+    margin: 0 10% -30px 10%;
+  }
+  .work .featured li .item_name {
+    margin: 0 0 30px 0;
+  }
+  .work .work_list li {
+    width: 25%;
+  }
+  .work .work_list li img {
+    margin: 0 10% -5px 10%;
+  }
+  .work .work_list .omit {
+    opacity: 1;
+    -webkit-transition: opacity 1s ease-in-out;
+    position: relative;
+    left: 0;
+  }
+  /* end .work */
+  /* !======580 TEAM STYLES======= */
+  .team {
+    /* end .team_members li */
+  
+  }
+  .team .team_members {
+    width: 90%;
+  }
+  .team .team_members .ceo {
+    width: 46%;
+    float: left;
+    margin: 0 4% 10px 0;
+  }
+  .team .team_members .nonceo {
+    width: 30%;
+    float: left;
+    margin: 0 3% 0 0;
+  }
+  .team .team_members .nonceo p {
+    padding: 0 5% 0 0;
+  }
+  .team .team_members li {
+    /* end header */
+  
+  }
+  /* end .team */
+  /* !======580 CONTACT STYLES======= */
+  .contact {
+    /* end form */
+  
+  }
+  .contact .contact_heading {
+    width: 50%;
+    margin: 0 25% 10px 25%;
+  }
+  .contact .iPhone {
+    margin: 0 0 0 20%;
+    /* end .iPhone */
+  
+  }
+  .contact .contact_content {
+    width: 30%;
+  }
+  /* end .contact */
+}
+/* ===! end min-width: 580px ====! */
+@media only screen and (min-width: 768px) {
+  /* !======768 LANDING STYLES======= */
+  body:before {
+    content: "768px";
+    background: purple;
+    position: fixed;
+    padding: 10px;
+    top: 0;
+    right: 0;
+    transition-duration: 0.35s;
+    -webkit-transition-duration: 0.35s;
+    -moz-transition-duration: 0.35s;
+  }
+  header {
+    /* end .landing_top */
+  
+    /* end .landing_bottom */
+  
+    /* end intro_text */
+  
+  }
+  header .landing_bottom .landing_illustration_wrap {
+    width: 360px;
+    position: absolute;
+    top: 128px;
+  }
+  header .landing_bottom .landing_illustration_wrap .fig {
+    margin: -70px 0 0 -20px;
+  }
+  header .landing_bottom .landing_illustration {
+    width: 100%;
+  }
+  header .intro_text {
+    margin: 0 0 0 40%;
+  }
+  header .intro_text img {
+    width: 370px;
+    height: 100px;
+  }
+  header .intro_text p {
+    size: 1em;
+    color: #444444;
+    width: 250px;
+  }
+  /* end header */
+  .fig {
+    font-size: .825em;
+  }
+  /* !======768 ABOUT STYLES======= */
+  .about .about_heading {
+    margin-top: 60px;
+  }
+  .about .about_illustration_wrap {
+    margin: -40px 0 0 10%;
+  }
+  /* end .about */
+  .about:after {
+    margin: 30px 0 0 0;
+  }
+  /* !======768 ABOUT STYLES======= */
+  .work {
+    /* end .featured */
+  
+    /* end .work_list */
+  
+  }
+  /* end .work */
+  /* !======768 TEAM STYLES======= */
+  .team {
+    width: 80%;
+    margin: 0 10% 0 10%;
+    transition-duration: 0.35s;
+    -webkit-transition-duration: 0.35s;
+    -moz-transition-duration: 0.35s;
+    /* end .team_members li */
+  
+  }
+  .team .team_members li {
+    /* end header */
+  
+  }
+  /* end .team */
+  /* !======768 CONTACT STYLES======= */
+  .contact {
+    /* end form */
+  
+  }
+  .contact .contact_heading {
+    width: 40%;
+    margin: 0 30% 10px 30%;
+  }
+  .contact .iPhone {
+    width: 260px;
+    height: 480px;
+    margin: 0 0 0 20%;
+    /* end .iPhone */
+  
+  }
+  .contact .iPhone .time {
+    font-size: .55em;
+    top: 88px;
+    left: 110px;
+  }
+  .contact .iPhone form {
+    position: absolute;
+    top: 100px;
+    left: 46px;
+    width: 100%;
+  }
+  .contact .iPhone form label {
+    margin: 16px 0 4px 0;
+  }
+  .contact .iPhone form .message {
+    min-height: 80px;
+  }
+  /* end .contact */
+  /*
+  .success{
+  	top: 99px;
+  	left: 35px;
+  	height: 284px;
+  	width: 191px;
+  }
+  */
+}
+/* ===! end min-width: 768px ====! */
+@media only screen and (min-width: 1140px) {
+  /* !======1140 LANDING STYLES======= */
+  body:before {
+    content: "1140px";
+    background: orange;
+    position: fixed;
+    padding: 10px;
+    top: 0;
+    right: 0;
+    transition-duration: 0.35s;
+    -webkit-transition-duration: 0.35s;
+    -moz-transition-duration: 0.35s;
+  }
+  header {
+    /* end .landing_top */
+  
+    /* end .landing_bottom */
+  
+    /* end intro_text */
+  
+  }
+  header .landing_top {
+    height: 180px;
+    transition-duration: 0.35s;
+    -webkit-transition-duration: 0.35s;
+    -moz-transition-duration: 0.35s;
+  }
+  header .landing_top .logo {
+    width: 50%;
+    margin: 0 0 0 -6%;
+    transition-duration: 0.35s;
+    -webkit-transition-duration: 0.35s;
+    -moz-transition-duration: 0.35s;
+  }
+  header .landing_bottom .landing_illustration_wrap {
+    width: 360px;
+    position: absolute;
+    top: 168px;
+    left: 16%;
+  }
+  header .landing_bottom .landing_illustration_wrap .fig {
+    font-size: 1.15em;
+    margin: -70px 0 0 -50px;
+  }
+  header .landing_bottom .landing_illustration {
+    width: 100%;
+  }
+  /* end header */
+  /* !======1140 ABOUT STYLES======= */
+  /* end .about */
+  /* !======1140 WORK STYLES======= */
+  .work {
+    /* end .featured */
+  
+    /* end .work_list */
+  
+  }
+  /* end .work */
+  /* !======1140 TEAM STYLES======= */
+  .team {
+    /* end .team_members li */
+  
+  }
+  .team .team_members li {
+    /* end header */
+  
+  }
+  /* end .team */
+  /* !======1140 CONTACT STYLES======= */
+  .contact {
+    /* end form */
+  
+  }
+  .contact .iPhone {
+    /* end .iPhone */
+  
+  }
+  /* end .contact */
+}
+/* ==!!!!!!!!!!!!!!!
+   Print styles.
+   Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/
+   ====!!!!!!!!!!!!!! */
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important;
+  }
+  /* Black prints faster: sanbeiji.com/archives/953 */
+  a, a:visited {
+    color: #444 !important;
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: "";
+  }
+  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+  }
+  /* css-discuss.incutio.com/wiki/Printing_Tables */
+  tr, img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  @page  {
+    margin: 0.5cm;
+  }
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2, h3 {
+    page-break-after: avoid;
+  }
+}
