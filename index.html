@@ -35,9 +35,9 @@
 <meta name="apple-mobile-web-app-capable" content="yes"/>
 
 
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet/less" type="text/css" href="css/style.less">
 
-
+	<script src="js/libs/less-1.2.1.min.js" type="text/javascript"></script>
 	<script src="js/libs/modernizr-2.0.6.min.js"></script>
 </head>
 
@@ -314,14 +314,22 @@ action="https://looprecur.wufoo.com/forms/z7x3k1/#public">
 	</div>
 	</footer><!-- end .contact -->
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
 <script src="js/script.js"></script>
-<script>
-	var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']]; // Change UA-XXXXX-X to be your site's ID
-	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
-	g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-	s.parentNode.insertBefore(g,s)}(document,'script'));
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25927338-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
 </script>
 
 <!--[if lt IE 7 ]>
