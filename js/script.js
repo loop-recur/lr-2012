@@ -2,6 +2,9 @@ $(document).ready(function(){
 
 	$(".iPhone").append('<div class="time">' + hours + ":" + minutes + " " + suffix + '</div>');
 
+	$(".expandable_trigger").click(function(){
+		$(".expandable").toggle();
+	});
 });
 
 var currentTime = new Date()

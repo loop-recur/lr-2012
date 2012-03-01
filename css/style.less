@@ -449,10 +449,9 @@ display: none;
 	
 		
 .description {
-.transition-fade;
-opacity: 0;
+display:none;
 position:absolute;
-left: -99999px;
+/*left: -99999px;*/
 overflow: hidden;
 background: url(../img/work_modal.png) no-repeat;
 background-position: right;
@@ -463,6 +462,8 @@ color: white;
 text-align: center;
 .text-shadow(0, 2px, 0, #222);
 z-index: 99;
+top:0;
+left:150px;
 
 	h3 {
 	margin: 10px 0 0 0;
@@ -492,16 +493,16 @@ z-index: 99;
 
 }/*end .description*/
 
-	
+/*	
 .work_list li:hover .description, .featured li:hover .description {
-/*z-index: 99;
-position: fixed;
-left: 0;
-top: 0;
-opacity: 1;
-.transition;*/
+	z-index: 99;
+	position: fixed;
+	left: 0;
+	top: 0;
+	opacity: 1;
+	.transition;
 }
-
+*/
 
 /* !====== BASE TEAM STYLES======= */
 
@@ -904,7 +905,7 @@ margin: 30px 0 30px 4%;
 	}
 }
 
-.work_list li:hover .description {
+/*.work_list li:hover .description {
 position: absolute;
 left: 120px;
 top: -90px;
@@ -914,7 +915,7 @@ top: -90px;
 position: absolute;
 left: 120px;
 top: 60px;
-}
+}*/
 
 .description:before {
 content: " ";
