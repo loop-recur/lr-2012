@@ -1,25 +1,36 @@
 $(document).ready(function(){
 
-	$(".iPhone").append('<div class="time">' + hours + ":" + minutes + " " + suffix + '</div>');
+  setInterval(getTime, 1000);
 
 	$(".expandable_trigger").click(showProjectDetails);
+
 });
 
-var currentTime = new Date()
-var hours = currentTime.getHours()
-var minutes = currentTime.getMinutes()
+var getTime = function() {
+  var currentTime = new Date(),
+      hours = currentTime.getHours(),
+      minutes = currentTime.getMinutes(),
+      suffix = "AM";
 
-var suffix = "AM";
-if (hours >= 12) {
-suffix = "PM";
-hours = hours - 12;
-}
-if (hours == 0) {
-hours = 12;
+  if (hours >= 12) {
+    suffix = "PM";
+    hours = hours - 12;
+  }
+
+  if (hours == 0) {
+    hours = 12;
+  }
+
+  if (minutes < 10) {
+    minutes = "0" + minutes;
+  }
+
+  setTime(hours, minutes, suffix);
 }
 
-if (minutes < 10)
-minutes = "0" + minutes
+var setTime = function(hours, minutes, suffix) {
+	$(".iPhone .time").html(hours + ":" + minutes + " " + suffix);
+}
 
 var showProjectDetails = function(e) {
   var winWidth = $(window).width(),
@@ -34,7 +45,5 @@ var showProjectDetails = function(e) {
     $details.toggleClass('tooltip_right');
     $details.css({'left': '-300px'});
   }
-
-  return false;
 }
 
