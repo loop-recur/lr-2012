@@ -1,0 +1,97 @@
+/*!
+@font-face
+==!*/
+   
+   @font-face {
+    font-family: 'CosmeticaOblique';
+    src: url('../fonts/mgopencosmeticaoblique-webfont.eot');
+    src: url('../fonts/mgopencosmeticaoblique-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/mgopencosmeticaoblique-webfont.woff') format('woff'),
+         url('../fonts/mgopencosmeticaoblique-webfont.ttf') format('truetype'),
+         url('../fonts/mgopencosmeticaoblique-webfont.svg#../fonts/mgopenCosmeticaOblique') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'CosmeticaRegular';
+    src: url('../fonts/mgopencosmeticaregular-webfont.eot');
+    src: url('../fonts/mgopencosmeticaregular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/mgopencosmeticaregular-webfont.woff') format('woff'),
+         url('../fonts/mgopencosmeticaregular-webfont.ttf') format('truetype'),
+         url('../fonts/mgopencosmeticaregular-webfont.svg#../fonts/mgopenCosmeticaRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*!
+less.js mixins
+==!*/
+
+.transition (@dur: .35s) {
+-webkit-transition-duration: @dur;
+-moz-transition-duration: @dur;
+-o-transtition-duration: @dur;
+transition-duration: @dur;
+}
+
+.transition-fade {
+-webkit-transition: opacity 5s ease-in-out;
+-moz-transition: opacity 5s ease-in-out;
+-o-transition: opacity 5s ease-in-out;
+transition: opacity 5s ease-in-out;
+}
+
+.transition-delay (@dur: 1s) {
+-webkit-transition-delay: @dur;
+-moz-transition-delay: @dur;
+-o-transition-delay: @dur;
+transition-delay: @dur;
+}
+
+.radius (@rad: 5px) {
+-webkit-border-radius: @rad;
+-moz-border-radius: @rad;
+-o-border-radius: @rad;
+border-radius: @rad;
+}
+
+.box-shadow (@x: 0, @y: 0, @blur: 1px, @color: rgba(0, 0, 0, 0.8)) {
+ -webkit-box-shadow: @arguments;
+ -moz-box-shadow: @arguments;
+ -o-box-shadow: @arguments;
+ box-shadow: @arguments;
+
+}
+
+.text-shadow (@x: 0, @y: 1px, @blur: 1px, @color: rgba(255, 255, 255, 0.3)) {
+-webkit-text-shadow: (@x @y @blur @color); 
+-moz-text-shadow: (@x @y @blur @color);
+-o-text-shadow: (@x @y @blur @color);
+text-shadow: (@x @y @blur @color);
+}
+
+.radialGradient(@posX:center, @posY:center, @shape:circle, @size:closest-side, @from: rgba(155,198,211, 0.3), @to:rgba(155,198,211, 1.0)){
+background-image: -webkit-radial-gradient(@posX @posY, @shape @size, @from, @to);
+}
+
+.clearfix {
+  zoom: 1;
+	&:after {
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+    content: ".";
+	}
+}
+
+@sans-serif: 'Helvetica Neue', Arial, Helvetica, serif;
+
+@serif: Georgia, Cambria, "Times New Roman", Times, serif;
+
+@optima: "Optima LT", Optima, 'CosmeticaRegular', Georgia, serif;
+
+@4: #444444;
