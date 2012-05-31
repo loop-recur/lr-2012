@@ -1,7 +1,11 @@
 $(document).ready(function(){
 
   setInterval(getTime, 1000);
-
+  
+  $('img[usemap]').rwdImageMaps();
+  
+  $("area[href*='#']").pageScroll();
+  
 });
 
 var getTime = function() {

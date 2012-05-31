@@ -47,13 +47,21 @@
 	<header class="landing">
 		
 		<section class="landing_top">
-			<h1 class="logo"><img src="img/logo.png" alt="loop/recur" title="For your rolodex."></h1>
+			<h1 class="logo"><img src="img/logo.png" alt="loop/recur" title="loop/recur: we even put thought into our random hover text. Well, not that much, I guess..."></h1>
 		</section>
 		
-		<section class="landing_bottom">
-			
+		<section class="landing_bottom">		
 			<div class="landing_illustration_wrap">
-				<img class="landing_illustration" src="img/landing_illustration.png" alt="an illustrated iPhone">
+				<img class="landing_illustration" src="img/landing_illustration.png" alt="an illustrated iPhone" usemap="landing_map" width="360" height="440">
+				<map name="landing_map">
+				  <area shape="poly" coords="124,108,261,122,254,142,115,123" href="#about" />
+				  <area shape="poly" coords="114,126,107,140,247,163,253,144" href="#work" />
+				  <area shape="poly" coords="98,160,240,185,247,164,106,142" href="#team" />
+				  <area shape="poly" coords="89,179,231,206,240,187,96,161" href="#contact" />
+				  <area shape="poly" coords="209,270,68,230,74,212,219,247" href="tel:4159449816" />
+				  <area shape="poly" coords="75,211,218,247,225,223,85,191" href="mailto:info@looprecur.com" />
+
+				</map>
 				<div class="fig">fig. 1: we build apps</div>
 			</div><!-- end .landing_illustration_wrap -->
 			
@@ -67,7 +75,7 @@
 		</section><!-- end .landing_bottom -->	
 	</header><!-- end .landing -->
 	
-	<section class="about">
+	<section id="about">
 		<div class="wrap">
 			<h2 class="about_heading"><img src="img/about_heading.png" alt="Who or what is loop/recur?"></h2>
 			
@@ -89,7 +97,7 @@
 		</div>
 	</section><!-- end .about -->
 	
-	<section class="work">
+	<section id="work">
 	<div class="wrap">
 		<h2 class="work_heading"><img src="img/work_heading.png" alt="Our Work"></h2>
 		
@@ -182,9 +190,9 @@
 			</li>
 		</ul>
 	</div>
-	</section><!-- end .work -->	
+	</section><!-- end #work -->	
 	
-	<section class="team">
+	<section id="team">
 	<div class="wrap">
 		<h2><img src="img/team_heading.png" alt="Our Team"></h2>
 		<ul class="team_members">
@@ -245,7 +253,7 @@
 	</div>
 	</section><!-- end .team -->
 
-	<footer class="contact">
+	<footer id="contact">
 	<div class="wrap">
 		<h2 class="contact_heading"><img src="img/contact_heading.png" alt="Contact Us"></h2>
 
@@ -283,11 +291,13 @@ action="https://looprecur.wufoo.com/forms/z7x3k1/#public">
 			<p>Let's clarify the last line. "A California Company" is cool to say, but technically, we're a California, Texas, and Amsterdam company. We write code from different area codes.</p>
 		</div>
 	</div>
-	</footer><!-- end .contact -->
+	</footer><!-- end #contact -->
 
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
 <script src="js/script.js"></script>
+
 
 <script type="text/javascript">
 

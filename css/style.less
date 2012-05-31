@@ -42,12 +42,13 @@ background-color: #f9ca4f;
 background-position: bottom;
 width: 100%;
 height: 140px;
+z-index: 1;
+position: relative;
 }
 	
 .logo img {
-max-height: 200px;
+max-height: 180px;
 margin: 0 0 0 -40%;
-z-index: 99;
 .transition;
 }	
 
@@ -56,6 +57,8 @@ background: url(../img/bgs/landing_bg2.png) repeat-x, url(../img/bgs/landing_bg3
 background-color: #faf6f6;
 width: 100%;
 height: auto;
+z-index: 99;
+position: relative;
 .clearfix;
 .transition;
 }
@@ -70,6 +73,7 @@ text-align: center;
 	width: 200px;
 	height: 244px;
 	margin: -25px 0 0 0;
+	z-index: 99;
 	.transition(1s);
 	}
 	
@@ -99,7 +103,7 @@ padding: 0 0 20px 0;
 
 /* !====== BASE ABOUT STYLES======= */
 	
-.about:before {
+#about:before {
 content: "";
 background: url(../img/bgs/border1.png) repeat-x;
 background-color: #eb5e29;
@@ -108,7 +112,7 @@ height: 9px;
 display: block;
 }
 
-.about {
+#about {
 background: url(../img/bgs/about_bg.png) repeat;
 background-color: #1e2026;
 width: 100%;
@@ -128,7 +132,7 @@ padding: 0 0 20px 0;
 	margin: 0 0 1em;
 	}
 	
-}/* end .about */
+}/* end #about */
 
 .about_illustration_wrap {
 width: 80%;
@@ -142,7 +146,7 @@ float: right;
 
 /* !====== BASE WORK STYLES======= */
 
-.work:before {
+#work:before {
 content: "";
 background: url(../img/bgs/border2.png) repeat-x;
 background-color: #eb5e29;
@@ -154,7 +158,7 @@ display: block;
 
 
 
-.work {
+#work {
 background-color: #9bc6d3;
 background: url(../img/bgs/work_bg.png) repeat;
 .radialGradient;
@@ -178,7 +182,7 @@ padding: 0 0 20px 0;
 	margin: 20px 10% 0;
 	}
 	
-}/* end .work */
+}/* end #work */
 
 .featured {
 text-align: center;
@@ -311,7 +315,7 @@ left:150px;
 
 /* !====== BASE TEAM STYLES======= */
 
-.team:before {
+#team:before {
 content: "";
 background: url(../img/bgs/border2.png) repeat-x;
 background-color: #eb5e29;
@@ -321,7 +325,7 @@ display: block;
 .box-shadow(0, -3px, 10px, rgba(0,0,0,0.3));
 }
 
-.team {
+#team {
 background: url(../img/bgs/team_bg.png) repeat;
 background-color: #fbfbfb;
 width: 100%;
@@ -374,14 +378,14 @@ height: auto;
 			}
 		}/* end header */
 	
-	}/* end .team_members li */
+	}/* end #team_members li */
 
-}/* end .team */
+}/* end #team */
 
 
 /* !====== BASE CONTACT STYLES======= */
 
-.contact {
+#contact {
 background: url(../img/bgs/contact_bg.png) repeat-y;
 background-color: #9bc6d3;
 background-size: 100%;
@@ -572,7 +576,7 @@ margin: 110px 0 0 0;
 /* !====== 320 ABOUT STYLES======= */
 
 
-.about {
+#about {
 font-size: .825em;
 }
 	
@@ -685,7 +689,7 @@ margin: 30px 0 30px 4%;
 
 /* !====== 480 WORK STYLES======= */
 
-.work {
+#work {
 
 	h2 img {
 	width: 70%;
@@ -748,7 +752,7 @@ z-index: 99;
 /* !====== 480 TEAM STYLES======= */
 
 
-.team {
+#team {
 	
 	.wrap {
 	width: 80%;
@@ -765,7 +769,7 @@ z-index: 99;
 /* !====== 480 CONTACT STYLES======= */
 
 
-.contact {
+#contact {
 
 	.wrap {
 	width: 95%;
@@ -877,7 +881,7 @@ margin: 130px 0 0 0;
 
 /* !====== 600 ABOUT STYLES======= */
 
-.about {
+#about {
 	
 	h2 img {
 	width: 50%;
@@ -898,7 +902,7 @@ margin: -20px 0 40px 4%;
 /* !====== 600 WORK STYLES======= */
 
 
-.work {
+#work {
 
 	h2 {
 	text-align: right;
@@ -938,7 +942,7 @@ display: block;
 
 /* !====== 600 TEAM STYLES======= */
 
-.team {
+#team {
 	
 	.wrap {
 	width: 90%;
@@ -964,7 +968,7 @@ display: block;
 
 /* !====== 600 CONTACT STYLES======= */
 
-.contact {
+#contact {
 
 	h2 {
 	text-align: right;
@@ -1066,7 +1070,7 @@ padding: 0 0 20px;
 }
 
 
-.about {
+#about {
 	
 	.wrap {
 	width: 80%;
@@ -1092,11 +1096,11 @@ max-width: 420px;
 }
 
 
-.team {
+#team {
 padding-bottom: 40px;
 }
 
-.contact {
+#contact {
 
 	.iPhone {
 	margin: 0 0 0 13%;
@@ -1118,7 +1122,7 @@ right: 0;
 .transition;
 }*/
 
-.about {
+#about {
 	
 	.wrap {
 	width: 80%;
@@ -1156,7 +1160,7 @@ max-width: 420px;
 
 
 
-.team {
+#team {
 	
 	.wrap {
 	width: 64%;
@@ -1180,7 +1184,7 @@ max-width: 420px;
 
 }
 
-.contact {
+#contact {
 
 	.wrap {
 	width: 80%;
@@ -1222,7 +1226,7 @@ margin: 0 0 0 -6%;
 }
 
 
-.about {
+#about {
 	
 	.wrap {
 	width: 70%;
@@ -1240,7 +1244,7 @@ margin: 0 0 0 -6%;
 margin: -8% 0 30px 3%;
 }
 
-.work {
+#work {
 
 	.wrap {
 	width: 80%;
@@ -1253,7 +1257,7 @@ margin: -8% 0 30px 3%;
 	
 }
 
-.contact {
+#contact {
 	.wrap {
 	width: 66%;
 	margin: 0 18%;
