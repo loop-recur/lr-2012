@@ -331,21 +331,47 @@ background-color: #fbfbfb;
 width: 100%;
 height: auto;
 .clearfix;
+	
+	ul {
+	margin: 0 0 30px 0;
+	}
 
 	h2 img {
 	width: 80%;
 	margin: 0 10% -20px;
 	max-width: 240px; 
 	}
+	
+	h3 {
+	font-size: .825em;
+	font-weight: 200;
+	color: #555555;
+	margin: -10px 0 20px 12%;
+	}
 
 	li {
-	width: 100%;
-	margin: 0 auto;
-	font-size: .825em;
+	width: 50%;
+	margin: 0 auto 20px 0;
+	font-size: .6em;
+	float: left;
+	font-family: @sans-serif;
+	color: #555555;
+	.text-shadow;
+	font-weight: 200;
+			
+			a {
+			text-decoration: none;
+			color: #555555;
+			.transition;
+			}
+			
+			a:hover {
+			opacity: 0.7;
+			}
 		
 		img {
 		float: left;
-		margin: 0 10px 0 0;
+		margin: -2px 0 5px 0;
 		.transition;
 		}
 		
@@ -359,26 +385,50 @@ height: auto;
 		font-size: .825em;
 		}
 		
-		header {
-		float: left;
-		width: 100%;
-		font-family: @sans-serif;
-		color: #555555;
-		.text-shadow;
-		font-weight: 200;
-			
-			a {
-			text-decoration: none;
-			color: #555555;
-			.transition;
+		div a {
+		margin: 5px 10px 0 0;
+		display: block;
+		text-decoration: underline;
+		font-color: #999;
+		
+			img {
+			margin: -3px 5px 0 0;
 			}
-			
-			a:hover {
-			opacity: 0.7;
-			}
-		}/* end header */
-	
+		}
+
 	}/* end #team_members li */
+	
+.you {
+		margin: 0 0 60px 25%;
+		}
+	
+#upcoming {
+font-size: 1.2em;
+
+	
+	ul li {
+	width: 100%;
+	}
+	
+	ul li img {
+	width: 38px;
+	height: 38px;
+	margin: 5px 5px 0 0;
+	}
+	
+
+	
+	h2 {
+	font: 100% "Optima LT", Optima, 'CosmeticaRegular', Georgia, serif;
+	font-weight: bold;
+	font-size: 1.25em;
+	margin: 5px 0 0 0;
+	}
+	
+	p {
+	font: 100% "Optima LT", Optima, 'CosmeticaRegular', Georgia, serif;
+	}
+}
 
 }/* end #team */
 
@@ -759,9 +809,15 @@ z-index: 99;
 	margin: 0 10%;
 	}
 	
-	li p {
-	font-size: .9em;
+	li {
+	font-size: .825em;
+	.transition;
 	}
+
+#upcoming {
+font-size: 1em
+}	
+	
 }
 
 
@@ -948,22 +1004,26 @@ display: block;
 	width: 90%;
 	margin: 0 5%;
 	}
-	
-	.ceo {
-	width: 46%;
-	float: left;
-	margin: 0 4% 10px 0;
-	}
 
-	.nonceo {
-	width: 30%;
+	li {
+	width: 45%;
 	float: left;
-	margin: 0 3% 0 0;
+	margin-left: 5%;
+	
+
 	
 		p {
 		padding: 0 5% 0 0;
 		}
 	}	
+	
+	.you {
+	margin: 0 0 60px 33%;
+	}
+	
+#upcoming {
+margin-right: 10%;
+}
 }
 
 /* !====== 600 CONTACT STYLES======= */
@@ -1098,6 +1158,34 @@ max-width: 420px;
 
 #team {
 padding-bottom: 40px;
+
+	#avatars {
+	width: 60%;
+	float: left;
+	
+		h2 {
+		font-size: .5em;
+		}
+	}
+	
+	#upcoming {
+	width: 30%;
+	float: right;
+	
+		h2 {
+		font-size: .825em;
+		}
+		
+		ul li:last-child {
+		display: none;
+		.transition;
+		}
+	
+	
+	
+	
+	}
+
 }
 
 #contact {
@@ -1161,25 +1249,32 @@ max-width: 420px;
 
 
 #team {
-	
-	.wrap {
-	width: 64%;
-	margin: 0 18%;
+
+	#avatars {
+	width: 40%;
 	}
-	
+		
 	h2 img {
 	margin: 0 0 0 -60px;
 	}
 	
-	.ceo {
-	width: 42%;
-	float: left;
-	margin: 0 6% 10px 2%;
-	}
 	
 	li p {
 	font-size: 1em;
 	color: #444444;
+	}
+	
+	#upcoming {
+	width: 45%;
+	margin-left: 5%;
+		
+		h2 {
+		font-size: 1em;
+		}
+	
+		ul li:last-child {
+		display: block;
+		}
 	}
 
 }
